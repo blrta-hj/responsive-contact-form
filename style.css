@@ -1,0 +1,196 @@
+body{
+    font-family: "Karla", sans-serif;
+    box-sizing: border-box;
+    background-color: hsl(148, 38%, 91%);
+}
+
+
+.form-wrapper{
+    width: 90%;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+    border-radius: 3%;  
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+label{
+    font-size: 16px;
+    color: hsl(187, 24%, 22%);
+    margin-bottom: 10px;
+
+}
+
+.name-lastname input{
+    width: 90%;
+    height: auto;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 2%;
+    cursor: pointer;
+
+}
+input:focus-visible{
+    border: 1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+#email{
+    width: 90%;
+    height: auto;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+#email:focus-visible{
+    border: 1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+.general-query{
+    width: 90%;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.general-query:focus-visible{
+    border: 1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+#general-enquiry{
+    width: 5%;
+    height: auto;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    
+}
+
+.support-query{
+    width: 90%;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    cursor: pointer;
+}
+
+#support-request{
+    width: 5%;
+    height: auto;
+    
+}
+
+.query-par{
+    color: hsl(187, 24%, 22%);
+    font-size: 16px;
+}
+
+
+textarea{
+    width: 95%;
+    height: 200px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+}
+
+textarea:focus-visible{
+    border: 1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+input[type="checkbox"]{
+    accent-color: green;
+}
+
+
+#submit-button{
+    width: 95%;
+    height: auto;
+    color: white;
+    font-size: 16px;
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#submit-button:hover{
+    background-color: hsl(147, 53%, 22%);
+}
+
+
+
+/*      BREAKPOINT FOR DESKTOP VIEW     */
+
+
+@media (min-width: 1024px){
+    .form-wrapper{
+        width: 60%;
+        height: auto;
+        padding-left: 20px;
+        margin-top: 50px;
+    }
+
+    .name-lastname{
+        display: flex;
+        gap: 5px;
+         margin-bottom: -13px;
+        
+    }
+
+    .name-lastname label{
+        margin-bottom: -15px;
+    }
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+    }
+
+    .last-name{
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+    }
+
+    .queries{
+        display: flex;
+        gap: 10px;
+    }
+
+    .general-query{
+        width: 42.8%;
+        margin: 4% 0;
+    }
+
+    .support-query{
+        width: 42.8%;
+    }
+
+    textarea{
+        width: 92%;
+        height: 100px;
+    }
+
+    #submit-button{
+        width: 93%;
+        height: auto;
+    }
+}
